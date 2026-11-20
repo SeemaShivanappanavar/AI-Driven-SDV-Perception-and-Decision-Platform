@@ -9,7 +9,15 @@
 
 ## Problem Statement
 
-Vehicle perception systems depend on reliable data to make downstream decisions. Delayed, stale, duplicated, out-of-order, or invalid perception messages can affect these decisions. This project develops a software-defined platform that monitors perception-data integrity and uses the integrity status to support fault-aware decision-making.
+Perception and decision-making functions are built into fixed, tightly-coupled embedded software stacks that are hard to update, test, or extend once deployed.
+
+AI models for perception and decision-making evolve rapidly, creating a growing mismatch with slow-moving automotive software release cycles.
+
+Real-time and safety constraints mean AI-driven decisions (e.g., emergency braking) cannot tolerate latency or unpredictability from poorly integrated software layers.
+
+Existing platforms sit at two extremes: full-scale autonomous vehicles (accurate but too costly for iterative research) or simplified ROS-based testbeds (affordable but not representative of real SDV architecture).
+
+**Core Problem:** There is a need for a modular, software-defined vehicle platform where AI-based perception and decision-making can be developed, updated, and validated independently of the underlying hardware, while still meeting real-time constraints, on an affordable and representative testbed.
 
 ## Objectives
 
