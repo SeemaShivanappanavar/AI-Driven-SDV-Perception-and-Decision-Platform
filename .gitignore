@@ -1,0 +1,82 @@
+# Python environments and cache
+kuksa_env/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Git and local settings
+.git/
+.env
+.env.*
+!.env.example
+.vssclient_history
+
+# Runtime database and generated video frames
+dashboard/data/*.db
+dashboard/data/*.db-wal
+dashboard/data/*.db-shm
+dashboard/static/latest_frame.jpg
+
+# Model weights and generated YOLO runs
+*.pt
+runs/
+
+# Local backups and temporary editor files
+backups/
+*.backup
+*.bak
+*.bak*
+*.before*
+*.save
+*~
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Obsolete and backup files
+RESEARCH_DOCUMENTATION_before_final.md
+decision/decision_module_backup.py
+evaluation/evaluate_decisions_original_backup.py
+evaluation/evaluation_results_corrected_backup.csv
+evaluation/evaluation_results_original_backup.csv
+evaluation/evaluation_results_backup.csv
+webcam_stream.py.backup
+experiments/fault_injector.py.save
+
+# Old or duplicate VSS databroker configurations
+custom_vss_dbc.json
+custom_vss_dbc_new.json
+
+# Temporary test and accidental empty files
+Fault-Aware
+Integrity
+KUKSA
+YOLO11n
+
+# Generated runtime images
+dashboard/static/latest_frame.jpg
+
+# Additional local backups and temporary files
+*.bak
+*.bak*
+*.backup
+*~
+.vssclient_history
+bus.jpg
+
+# Local model weights
+yolo11n.pt
+README_before_github.md
+dashboard/app.py.backup_sidebar
+
+# Exclude obsolete evaluation and temporary standalone tests
+evaluation/evaluate_decisions.py
+evaluation/evaluation_results.csv
+test_*.py
+
+# Detailed local logs and raw benchmark data
+logs/*.md
+evaluation/latency_benchmark_raw.csv

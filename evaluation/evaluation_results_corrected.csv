@@ -1,0 +1,11 @@
+test_id,scenario,session_id,sequence_number,injected_fault,integrity_status,faults,baseline_decision,proposed_decision,baseline_latency_ms,proposed_latency_ms
+T01,normal_no_person,8b3606d1-76f9-4a29-9aae-f3e27c537ac3,1,False,VALID,,NORMAL,NORMAL,0.0105,0.1179
+T02,normal_person,9fae5909-1667-4760-ab43-0514220af1f2,1,False,VALID,,ALERT,ALERT,0.0083,0.0532
+T03,stale,5f9a50ac-d3ea-436e-8bda-5c1645de40a1,1,True,FAULT,Stale message,ALERT,CAUTION,0.0054,0.0303
+T04_1,duplicate,25fe1b96-7997-4c48-aa5d-3bcaa02a4963,1,False,VALID,,ALERT,ALERT,0.0055,0.0357
+T04_2,duplicate,25fe1b96-7997-4c48-aa5d-3bcaa02a4963,1,True,FAULT,Duplicate message,ALERT,CAUTION,0.0047,0.0284
+T05_1,missing_sequence,51b84bd8-f4f3-4c27-b02a-cae0b9730d7e,1,False,VALID,,NORMAL,NORMAL,0.0053,0.0355
+T05_2,missing_sequence,51b84bd8-f4f3-4c27-b02a-cae0b9730d7e,3,True,FAULT,Sequence gap: 1 message(s),NORMAL,CAUTION,0.0047,0.0297
+T06_1,out_of_order,53844c9c-b55f-49b5-bf2b-615e348cd77a,2,False,VALID,,ALERT,ALERT,0.005,0.0306
+T06_2,out_of_order,53844c9c-b55f-49b5-bf2b-615e348cd77a,1,True,FAULT,Out-of-order message,ALERT,CAUTION,0.005,0.0274
+T07,invalid_confidence,73d23a4d-d6ed-4833-95d9-5db135966d0a,1,True,FAULT,Invalid confidence,ALERT,CAUTION,0.0051,0.0208

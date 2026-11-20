@@ -1,0 +1,11 @@
+test_id,scenario,injected_fault,integrity_status,faults,baseline_decision,proposed_decision
+T01,normal_no_person,False,VALID,,NORMAL,NORMAL
+T02,normal_person,False,VALID,,ALERT,ALERT
+T03,stale,True,FAULT,Stale message,ALERT,CAUTION
+T04_1,duplicate,False,VALID,,ALERT,ALERT
+T04_2,duplicate,True,FAULT,Duplicate message,ALERT,CAUTION
+T05_1,missing_sequence,False,VALID,,NORMAL,NORMAL
+T05_2,missing_sequence,True,FAULT,Sequence gap: 1 message(s),NORMAL,CAUTION
+T06_1,out_of_order,False,VALID,,ALERT,ALERT
+T06_2,out_of_order,True,FAULT,Out-of-order message,ALERT,CAUTION
+T07,invalid_confidence,True,FAULT,Invalid confidence,ALERT,CAUTION

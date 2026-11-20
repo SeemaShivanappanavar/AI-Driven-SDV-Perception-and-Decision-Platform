@@ -1,0 +1,163 @@
+[
+    {
+        "test_id": "T01",
+        "scenario": "normal_no_person",
+        "schema_version": "1.0",
+        "source_id": "evaluation_dataset",
+        "session_id": "8cf9d40d-05a0-493d-b3e8-cfa4ff521921",
+        "sequence_number": 1,
+        "capture_timestamp_ms": 1794423287441,
+        "detection_count": 1,
+        "detections": [
+            {
+                "class": "car",
+                "confidence": 0.91,
+                "bbox": [
+                    300,
+                    150,
+                    600,
+                    420
+                ]
+            }
+        ],
+        "expected_fault": false
+    },
+    {
+        "test_id": "T02",
+        "scenario": "normal_person",
+        "schema_version": "1.0",
+        "source_id": "evaluation_dataset",
+        "session_id": "8cf9d40d-05a0-493d-b3e8-cfa4ff521921",
+        "sequence_number": 2,
+        "capture_timestamp_ms": 1794423287441,
+        "detection_count": 1,
+        "detections": [
+            {
+                "class": "person",
+                "confidence": 0.94,
+                "bbox": [
+                    120,
+                    80,
+                    250,
+                    400
+                ]
+            }
+        ],
+        "expected_fault": false
+    },
+    {
+        "test_id": "T03",
+        "scenario": "stale",
+        "schema_version": "1.0",
+        "source_id": "evaluation_dataset",
+        "session_id": "8cf9d40d-05a0-493d-b3e8-cfa4ff521921",
+        "sequence_number": 3,
+        "capture_timestamp_ms": 1794423285441,
+        "detection_count": 1,
+        "detections": [
+            {
+                "class": "person",
+                "confidence": 0.94,
+                "bbox": [
+                    120,
+                    80,
+                    250,
+                    400
+                ]
+            }
+        ],
+        "expected_fault": true
+    },
+    {
+        "test_id": "T04",
+        "scenario": "duplicate",
+        "schema_version": "1.0",
+        "source_id": "evaluation_dataset",
+        "session_id": "8cf9d40d-05a0-493d-b3e8-cfa4ff521921",
+        "sequence_number": 3,
+        "capture_timestamp_ms": 1794423287441,
+        "detection_count": 1,
+        "detections": [
+            {
+                "class": "person",
+                "confidence": 0.94,
+                "bbox": [
+                    120,
+                    80,
+                    250,
+                    400
+                ]
+            }
+        ],
+        "expected_fault": true
+    },
+    {
+        "test_id": "T05",
+        "scenario": "missing_sequence",
+        "schema_version": "1.0",
+        "source_id": "evaluation_dataset",
+        "session_id": "8cf9d40d-05a0-493d-b3e8-cfa4ff521921",
+        "sequence_number": 5,
+        "capture_timestamp_ms": 1794423287441,
+        "detection_count": 1,
+        "detections": [
+            {
+                "class": "car",
+                "confidence": 0.91,
+                "bbox": [
+                    300,
+                    150,
+                    600,
+                    420
+                ]
+            }
+        ],
+        "expected_fault": true
+    },
+    {
+        "test_id": "T06",
+        "scenario": "out_of_order",
+        "schema_version": "1.0",
+        "source_id": "evaluation_dataset",
+        "session_id": "8cf9d40d-05a0-493d-b3e8-cfa4ff521921",
+        "sequence_number": 4,
+        "capture_timestamp_ms": 1794423287441,
+        "detection_count": 1,
+        "detections": [
+            {
+                "class": "person",
+                "confidence": 0.94,
+                "bbox": [
+                    120,
+                    80,
+                    250,
+                    400
+                ]
+            }
+        ],
+        "expected_fault": true
+    },
+    {
+        "test_id": "T07",
+        "scenario": "invalid_confidence",
+        "schema_version": "1.0",
+        "source_id": "evaluation_dataset",
+        "session_id": "8cf9d40d-05a0-493d-b3e8-cfa4ff521921",
+        "sequence_number": 6,
+        "capture_timestamp_ms": 1794423287441,
+        "detection_count": 1,
+        "detections": [
+            {
+                "class": "person",
+                "confidence": 1.5,
+                "bbox": [
+                    120,
+                    80,
+                    250,
+                    400
+                ]
+            }
+        ],
+        "expected_fault": true
+    }
+]

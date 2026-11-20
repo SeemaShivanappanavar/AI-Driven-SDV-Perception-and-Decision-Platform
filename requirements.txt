@@ -1,0 +1,9 @@
+ultralytics
+opencv-python
+numpy
+kuksa-client==0.6.0
+flask
+pandas
+streamlit
+matplotlib
+streamlit-autorefresh

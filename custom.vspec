@@ -1,0 +1,20 @@
+Vehicle.Perception.FrameData:
+  type: sensor
+  datatype: string
+  description: JSON data containing object detections from the vehicle perception system.
+
+Vehicle.Perception.IntegrityStatus:
+  type: sensor
+  datatype: string
+  description: JSON data containing perception message integrity assessment and detected communication faults.
+
+Vehicle.Decision.Status:
+  type: sensor
+  datatype: string
+  description: JSON data containing the fault-aware decision result and its explanation.
+
+Vehicle.Simulation.ObstacleDistance:
+  type: sensor
+  datatype: float
+  unit: m
+  description: Simulated distance between the vehicle and a detected obstacle in metres.
