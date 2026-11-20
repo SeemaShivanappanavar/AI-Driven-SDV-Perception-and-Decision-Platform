@@ -180,3 +180,12 @@ These measurements represent one live session and should not be interpreted as g
 ## System Architecture Figure
 
 See `research_results/figures/06_system_architecture.png`.
+
+## Project Status
+
+- **Project implementation:** Completed
+- **System integration and demonstration:** Completed
+- **Experimental evaluation:** Completed
+- **Research paper:** Approximately 50% completed; remaining writing, analysis, and refinement are in progress.
+
+The software platform has been implemented and evaluated through controlled experiments. Research paper preparation is ongoing.
